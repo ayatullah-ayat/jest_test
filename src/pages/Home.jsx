@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import FilterResult from '../components/FilterResult'
 import GameContent from '../components/GameContent'
 import styles from '../../src/assets/css/pages/Home.module.css';
+import useFetch from '../Hooks/useFetch';
 
 const Home = () => {
-    const gameContent = [1,2,3,4];
+
+    const { data, loading, error } = useFetch("https://public.connectnow.org.uk/applicant-test/");
 
     return (
         <div>
@@ -19,9 +21,15 @@ const Home = () => {
                     <Col md={8}>
                         <div className={styles.GameContentWrap}>
                             {
-                                gameContent && gameContent.map((item, index)=>(
-                                    <GameContent key={index}/>
-                                ))
+                                !loading ? (
+                                    data ? data.map((item, index)=>(
+                                        <GameContent key={index} game={item}/>
+                                    ))
+                                    : <p>No Content Found </p>
+                                )
+                                : (
+                                  <p>Loading ... </p>  
+                                )
                             }
                         </div>
                     </Col>

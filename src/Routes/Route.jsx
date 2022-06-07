@@ -10,7 +10,7 @@ const routes = [
     {
         path: '/contact',
         element: <Contact />
-    },
+    }
 ];
 
 export default routes;

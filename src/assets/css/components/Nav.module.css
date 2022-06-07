@@ -1,0 +1,32 @@
+.navWrapper {
+    background-color: var(--body-background);
+    margin-top: 20px;
+}
+
+.navWrapper ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+
+
+.navWrapper ul li {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+
+.navWrapper ul li a {
+    text-decoration: none;
+    color: var(--heading-btn-labels);
+}
+
+
+@media only screen and (min-width:280px) and (max-width:992px) {
+    .navWrapper ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+}

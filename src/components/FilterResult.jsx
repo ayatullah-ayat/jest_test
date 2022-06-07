@@ -20,7 +20,7 @@ const FilterResult = () => {
             <div className={styles.selectFeild}>
               <label> Order By</label>
               <select>
-                <option value="" selected disabled>Release Date</option>
+                <option value="" disabled>Release Date</option>
                 <option value="">Name</option>
                 <option value="">Score</option>
               </select>

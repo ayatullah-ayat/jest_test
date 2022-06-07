@@ -5,6 +5,7 @@
     background-color: #0E192B;
     margin-bottom: 10px;
     padding-right: 10px;
+    width: 100%;
 }
 
 .GameImage {
@@ -16,6 +17,7 @@
 
 .GameContentInfo {
     padding: 20px 20px;
+    width: 60% !important;
 }
 
 .GameContentInfo h4 {
