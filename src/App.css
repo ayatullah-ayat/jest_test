@@ -1,0 +1,5 @@
+body {
+  background-image: var(--body-background);
+  color: #fff;
+  padding: 20px;
+}

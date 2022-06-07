@@ -1,0 +1,113 @@
+.FilterWrap {
+    background-color: var(--panel-card-background);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.inputFeild label {
+    font-family: var(--heading-font-family);
+    padding: 5px 0px;
+}
+
+.inputFeild input {
+    width: 100%;
+    height: 30px;
+}
+
+.inputFeild input:focus {
+    outline: none;
+}
+
+
+
+.inputFeild input,
+.selectFeild select {
+    background-color: var(--input-background);
+    border: none;
+    outline: none;
+    color: var(--text-color);
+}
+
+
+.inputFeild label,
+.selectFeild label {
+    color: var(--heading-btn-labels);
+}
+
+.selectFeild label {
+    font-family: var(--heading-font-family);
+    padding: 5px 0px;
+}
+
+.selectFeild select {
+    width: 100%;
+    height: 30px;
+}
+
+.selectFeild select:focus {
+    outline: none;
+}
+
+.FilterButton {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.FilterButton button {
+    border: none;
+    outline: none;
+    background-color: var(--button-color);
+    color: var(--heading-btn-labels);
+    padding: 2px 15px;
+}
+
+
+
+
+@media only screen and (min-width:600px) and (max-width:992px) {
+    .FilterWrap {
+        width: 100% !important;
+    }
+
+    .mobileWrapper {
+        display: flex !important;
+        align-items: flex-end;
+    }
+
+
+    .mobileWrapper .inputFeild {
+        width: 50%;
+    }
+
+
+    .mobileWrapper .inputFeild input:nth-child(2) {
+        width: 80%;
+        margin-right: 10px;
+    }
+
+    .mobileWrapper .selectFeild select {
+        width: 80%;
+        margin-right: 10px;
+    }
+
+
+    .FilterButton button {
+        display: inline-block;
+        padding: 0px 10px;
+        height: 30px;
+    }
+
+}
+
+
+
+@media only screen and (min-width:280px) and (max-width:520px) {
+    .FilterButton button {
+        display: block;
+        padding: 0px 10px;
+        height: 30px;
+        width: 100%;
+    }
+
+}

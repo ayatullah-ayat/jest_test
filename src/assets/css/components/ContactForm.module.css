@@ -1,0 +1,84 @@
+.TopContent {
+    text-align: left;
+}
+
+.TopContent h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.TopContent h2,
+.TopContent p,
+.ContactInputFeild label {
+    font-family: var(--body-font-family);
+}
+
+.TopContent p {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 20px;
+}
+
+.ContactFormWrap {
+    padding: 10px;
+    background-color: #0E192B;
+}
+
+.ContactInputFeild {
+    padding: 10px 0px;
+}
+
+.ContactInputFeild label {
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.ContactInputFeild input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    color: #fff;
+}
+
+.ContactInputFeild input:focus {
+    outline: none;
+}
+
+.MessageAreaWrap label {
+    padding-bottom: 5px;
+}
+
+.ContactInputFeild input,
+.MessageAreaWrap textarea {
+    background-color: var(--input-background);
+}
+
+.MessageAreaWrap textarea {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    border: none;
+    color: #fff;
+}
+
+.MessageAreaWrap textarea:focus {
+    outline: none;
+}
+
+label span {
+    color: var(--button-color);
+}
+
+.ContactFormBtn {
+    text-align: right;
+    padding: 10px 0px;
+}
+
+.ContactFormBtn button {
+    font-family: var(--body-font-family);
+    background-color: var(--button-color);
+    border: none;
+    padding: 2px 15px;
+    color: var(--heading-btn-labels);
+}
