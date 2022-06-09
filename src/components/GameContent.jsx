@@ -21,7 +21,7 @@ const GameContent = ({ game }) => {
 
   return (
     <Fragment>
-        <div className={styles.GameContentWrap}>
+        <div className={styles.GameContentWrap} data-testid="game-item">
 
           <div className={styles.GameImage}>
             <div className={styles.MobileGameScore}>

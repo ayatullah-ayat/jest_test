@@ -21,20 +21,20 @@ const ContactForm = () => {
         <Row className={styles.ContactFormWrap}>
           <Col md={6}>
             <div className={styles.ContactInputFeild}>
-              <label>Name <span>*</span></label> <br />
-              <input type="text" />
+              <label htmlFor='name'>Name <span>*</span></label> <br />
+              <input id='name' type="text" />
             </div>
           </Col>
           <Col md={6}>
             <div className={styles.ContactInputFeild}>
-              <label>Email <span>*</span></label> <br />
-              <input type="email" />
+              <label htmlFor='email'>Email <span>*</span></label> <br />
+              <input id='email' type="email" />
             </div>
           </Col>
           <Col md={12}>
             <div className={styles.MessageAreaWrap}>
-            <label htmlFor="">Message <span>*</span></label> <br />
-              <textarea name="" id="" cols="30" rows="5"></textarea>
+            <label htmlFor="message">Message <span>*</span></label> <br />
+              <textarea name="" id="message" cols="30" rows="5"></textarea>
             </div>
           </Col>
           <Col md={12}>

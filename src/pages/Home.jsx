@@ -19,13 +19,15 @@ const Home = () => {
                         </div>
                     </Col>
                     <Col md={8}>
-                        <div className={styles.GameContentWrap}>
+                        <div className={styles.GameContentWrap} data-testid="parent">
                             {
                                 !loading ? (
                                     data ? data.map((item, index)=>(
-                                        <GameContent key={index} game={item}/>
+                                        <div data-testid="childitem">
+                                            <GameContent key={index} game={item}/>
+                                        </div>
                                     ))
-                                    : <p>No Content Found </p>
+                                    : <p>No Content Found</p>
                                 )
                                 : (
                                   <p>Loading ... </p>  

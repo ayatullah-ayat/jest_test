@@ -7,22 +7,22 @@ const FilterResult = () => {
       <div className={styles.FilterWrap}>
           <h6>Filter Results</h6>
           <div className={styles.inputFeild}>
-            <label>Name</label>
-            <input type="text" />
+            <label htmlFor='name'>Name</label>
+            <input id='name' type="text" />
           </div>
 
           <div className={styles.mobileWrapper}>
             <div className={styles.inputFeild}>
-              <label>Minimum Score</label>
-              <input type="text" />
+              <label htmlFor='min-score'>Minimum Score</label>
+              <input id="min-score" type="text" />
             </div>
 
             <div className={styles.selectFeild}>
-              <label> Order By</label>
-              <select>
-                <option value="" disabled>Release Date</option>
-                <option value="">Name</option>
-                <option value="">Score</option>
+              <label htmlFor='order-by'> Order By</label>
+              <select data-testid="select-date" id='order-by'>
+                <option value="0" data-testid="select-item">Release Date</option>
+                <option value="1" data-testid="select-item">Name</option>
+                <option value="2" data-testid="select-item">Score</option>
               </select>
             </div>
             <div className={styles.FilterButton}>
